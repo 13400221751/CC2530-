@@ -1,0 +1,10 @@
+        MODULE  ?cstartup
+
+        EXTERN  main
+
+        RSEG    CSTART:CODE:NOROOT(0)
+
+reset_vector:
+        LJMP    main
+
+        END

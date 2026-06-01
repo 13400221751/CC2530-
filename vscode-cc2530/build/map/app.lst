@@ -1,0 +1,1173 @@
+################################################################################
+#                                                                              #
+#      IAR Universal Linker V5.0.2.5/W32                                       #
+#                                                                              #
+#           Link time     =  01/Jun/2026  20:31:44                             #
+#           Target CPU    =  x51                                               #
+#           List file     =  C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\map\app.lst                  #
+#           Output file 1 =  C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\app.hex                      #
+#                            Format: intel-standard                            #
+#           Output file 2 =  C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\app.d51                      #
+#                            Format: debug                                     #
+#                            UBROF version 10.0.3                              #
+#                            Using library modules for C-SPY (-rt)             #
+#           Command line  =  -f                                                #
+#                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 6.0 Evaluation\8051\config\devices\Texas In #
+#                            struments\lnk51ew_cc2530f256.xcl"                 #
+#                            (-D_IDATA0_START=0x00 -D_IDATA0_END=0xFF          #
+#                            -D_PDATA0_START=0x1E00 -D_PDATA0_END=0x1EFF       #
+#                            -D_IXDATA0_START=0x0001 -D_IXDATA0_END=0x1EFF     #
+#                            -D_XDATA0_START=_IXDATA0_START                    #
+#                            -D_XDATA0_END=_IXDATA0_END                        #
+#                            -D_CODE0_START=0x0000 -D_CODE0_END=0xFFFF         #
+#                            -D?REGISTER_BANK=0x0 -D_REGISTER_BANK_START=0x0   #
+#                            -D_BREG_START=0x00 -D?VB=0x20 -D?ESP=0x9B         #
+#                            -Z(BIT)BREG=_BREG_START -Z(BIT)BIT_N=0-7F         #
+#                            -Z(DATA)REGISTERS+8=_REGISTER_BANK_START          #
+#                            -Z(DATA)BDATA_Z,BDATA_N,BDATA_I=20-2F             #
+#                            -Z(DATA)VREG+_NR_OF_VIRTUAL_REGISTERS=08-7F       #
+#                            -Z(DATA)PSP,XSP=08-7F -Z(DATA)DOVERLAY=08-7F      #
+#                            -Z(DATA)DATA_I,DATA_Z,DATA_N=08-7F                #
+#                            -U(IDATA)0-7F=(DATA)0-7F                          #
+#                            -Z(IDATA)IDATA_I,IDATA_Z,IDATA_N=08-_IDATA0_END   #
+#                            -Z(IDATA)ISTACK+_IDATA_STACK_SIZE#08-_IDATA0_END  #
+#                            -Z(IDATA)IOVERLAY=08-FF -Z(CODE)INTVEC=0          #
+#                            -Z(CODE)CSTART=_CODE0_START-_CODE0_END            #
+#                            -Z(CODE)BIT_ID,BDATA_ID,DATA_ID,IDATA_ID,IXDATA_I #
+#                            D,PDATA_ID,XDATA_ID=_CODE0_START-_CODE0_END       #
+#                            -Z(CODE)RCODE,DIFUNCT,CODE_C,CODE_N,NEAR_CODE=_CO #
+#                            DE0_START-_CODE0_END                              #
+#                            -Z(CODE)CHECKSUM#_CODE0_END                       #
+#                            -Z(XDATA)PDATA_Z,PDATA_I=_PDATA0_START-_PDATA0_EN #
+#                            D                                                 #
+#                            -P(XDATA)PDATA_N=_PDATA0_START-_PDATA0_END        #
+#                            -Z(XDATA)PSTACK+_PDATA_STACK_SIZE=_PDATA0_START-_ #
+#                            PDATA0_END                                        #
+#                            -Z(XDATA)EXT_STACK+_EXTENDED_STACK_SIZE=_EXTENDED #
+#                            _STACK_START                                      #
+#                            -Z(XDATA)XSTACK+_XDATA_STACK_SIZE=_XDATA0_START-_ #
+#                            XDATA0_END                                        #
+#                            -Z(XDATA)IXDATA_Z,IXDATA_I=_IXDATA0_START-_IXDATA #
+#                            0_END                                             #
+#                            -P(XDATA)IXDATA_N=_IXDATA0_START-_IXDATA0_END     #
+#                            -Z(XDATA)XDATA_Z,XDATA_I=_XDATA0_START-_XDATA0_EN #
+#                            D                                                 #
+#                            -P(XDATA)XDATA_N=_XDATA0_START-_XDATA0_END        #
+#                            -Z(XDATA)XDATA_HEAP+_XDATA_HEAP_SIZE=_XDATA0_STAR #
+#                            T-_XDATA0_END                                     #
+#                            -Z(CONST)XDATA_ROM_C=_XDATA0_START-_XDATA0_END    #
+#                            -cx51) -D_IDATA_STACK_SIZE=0x90                   #
+#                            -D_PDATA_STACK_SIZE=0x90                          #
+#                            -D_XDATA_STACK_SIZE=0x0EFF                        #
+#                            -D_EXTENDED_STACK_START=0x002000                  #
+#                            -D_EXTENDED_STACK_SIZE=0x03FF                     #
+#                            -D_XDATA_HEAP_SIZE=0x0800                         #
+#                            -D_NR_OF_VIRTUAL_REGISTERS=0x20                   #
+#                            "-IC:\Program Files (x86)\IAR Systems\Embedded Wo #
+#                            rkbench 6.0 Evaluation\8051\lib"                  #
+#                            "-IC:\Program Files (x86)\IAR Systems\Embedded Wo #
+#                            rkbench 6.0 Evaluation\8051\lib\clib"             #
+#                            -l                                                #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\map\app                      #
+#                            -xms                                              #
+#                            -Ointel-standard=C:\Users\Administrator\Documents #
+#                            \Codex\2026-06-01\vscode-cc2530\build\app.hex     #
+#                            -rt -o                                            #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\app.d51                      #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_adc.r51           #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_board.r51         #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_car4wd.r51        #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_dual_line_follow. #
+#                            r51                                               #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_gpio.r51          #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_irq.r51           #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_l298n.r51         #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_led.r51           #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_line4.r51         #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_radio.r51         #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_system.r51        #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_timer1.r51        #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\cc2530_uart0.r51         #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\main.r51                 #
+#                            C:\Users\Administrator\Documents\Codex\2026-06-01 #
+#                            \vscode-cc2530\build\obj\startup.r51              #
+#                            "C:\Program Files (x86)\IAR Systems\Embedded Work #
+#                            bench 6.0 Evaluation\8051\lib\clib\cl-pli-nsid-1e #
+#                            16x01.r51"                                        #
+#                                                                              #
+#                           Copyright (C) 1987-2010 IAR Systems AB.            #
+################################################################################
+
+
+
+
+
+                ****************************************
+                *                                      *
+                *           CROSS REFERENCE            *
+                *                                      *
+                ****************************************
+
+       Program entry at : CODE      0000002A  Relocatable, from module : CSTARTUP
+
+
+
+
+                ****************************************
+                *                                      *
+                *            RUNTIME MODEL             *
+                *                                      *
+                ****************************************
+
+  __SystemLibrary          = CLib
+  __calling_convention     = idata_reentrant
+  __code_model             = near
+  __core                   = plain
+  __data_model             = small
+  __dptr_size              = 16
+  __extended_stack         = disabled
+  __location_for_constants = data
+  __number_of_dptrs        = 1
+  __rt_version             = 1
+
+
+
+                ****************************************
+                *                                      *
+                *              MODULE MAP              *
+                *                                      *
+                ****************************************
+
+
+  DEFINED ABSOLUTE ENTRIES
+    *************************************************************************
+
+  DEFINED ABSOLUTE ENTRIES
+  PROGRAM MODULE, NAME : ?ABS_ENTRY_MOD
+
+Absolute parts
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           _NR_OF_VIRTUAL_REGISTERS
+                                   00000020 
+           _XDATA_HEAP_SIZE        00000800 
+           _EXTENDED_STACK_SIZE    000003FF 
+           _EXTENDED_STACK_START   00002000 
+           _XDATA_STACK_SIZE       00000EFF 
+           _PDATA_STACK_SIZE       00000090 
+           _IDATA_STACK_SIZE       00000090 
+           ?ESP                    0000009B 
+           ?VB                     00000020        ?FUNC_ENTER_SP (?FUNC_ENTER_SP)
+                                                   ?FUNC_LEAVE_SP (?FUNC_LEAVE_SP)
+           _BREG_START             00000000 
+           _REGISTER_BANK_START    00000000 
+           ?REGISTER_BANK          00000000        Segment part 6 (CSTARTUP)
+           _CODE0_END              0000FFFF 
+           _CODE0_START            00000000 
+           _XDATA0_END             00001EFF 
+           _XDATA0_START           00000001 
+           _IXDATA0_END            00001EFF 
+           _IXDATA0_START          00000001 
+           _PDATA0_END             00001EFF 
+           _PDATA0_START           00001E00 
+           _IDATA0_END             000000FF 
+           _IDATA0_START           00000000 
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_adc.r51
+  PROGRAM MODULE, NAME : cc2530_adc
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 000000B4 - 000000B4 (0x1 bytes), align: 0
+  Segment part 1. ROOT.       Intra module refs:   cc2530_adc_read_once
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCCON1                 000000B4 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000B6 - 000000B6 (0x1 bytes), align: 0
+  Segment part 2. ROOT.       Intra module refs:   cc2530_adc_read_once
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCCON3                 000000B6 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000BA - 000000BA (0x1 bytes), align: 0
+  Segment part 3. ROOT.       Intra module refs:   cc2530_adc_read_once
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCL                    000000BA 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000BB - 000000BB (0x1 bytes), align: 0
+  Segment part 4. ROOT.       Intra module refs:   cc2530_adc_read_once
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ADCH                    000000BB 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000BC - 000000BC (0x1 bytes), align: 0
+  Segment part 5. ROOT.       Intra module refs:   cc2530_random16
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RNDL                    000000BC 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000BD - 000000BD (0x1 bytes), align: 0
+  Segment part 6. ROOT.       Intra module refs:   cc2530_random16
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RNDH                    000000BD 
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 00000080 - 000000AC (0x2d bytes), align: 0
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_adc_read_once    00000080        main (main)
+               ISTACK = 00000000 ( 00000002 )
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 000000AD - 000000CC (0x20 bytes), align: 0
+  Segment part 13.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_random16         000000AD        main (main)
+               ISTACK = 00000000 ( 00000002 )
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_board.r51
+  PROGRAM MODULE, NAME : cc2530_board
+
+  SEGMENTS IN THE MODULE
+  ======================
+IDATA_I
+  Relative segment, address: IDATA 00000041 - 00000042 (0x2 bytes), align: 0
+  Segment part 6.             Intra module refs:   cc2530_board_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_board_status_led
+                                   00000041        main (main)
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 000000CD - 000000D1 (0x5 bytes), align: 0
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_board_init       000000CD        main (main)
+               calls direct
+    -------------------------------------------------------------------------
+IDATA_ID
+  Relative segment, address: CODE 00000036 - 00000037 (0x2 bytes), align: 0
+  Segment part 7.             Intra module refs:   cc2530_board_status_led
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_car4wd.r51
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_dual_line_follow.r51
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_gpio.r51
+  PROGRAM MODULE, NAME : cc2530_gpio
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 00000080 - 00000080 (0x1 bytes), align: 0
+  Segment part 1. ROOT.       Intra module refs:   cc2530_gpio_write_low
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P0                      00000080 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 00000090 - 00000090 (0x1 bytes), align: 0
+  Segment part 2. ROOT.       Intra module refs:   cc2530_gpio_write_low
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1                      00000090 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000A0 - 000000A0 (0x1 bytes), align: 0
+  Segment part 3. ROOT.       Intra module refs:   cc2530_gpio_write_low
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2                      000000A0 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F3 - 000000F3 (0x1 bytes), align: 0
+  Segment part 4. ROOT.       Intra module refs:   cc2530_gpio_select_gpio_function
+                                                   cc2530_uart0_init (cc2530_uart0)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P0SEL                   000000F3 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F4 - 000000F4 (0x1 bytes), align: 0
+  Segment part 5. ROOT.       Intra module refs:   cc2530_gpio_select_gpio_function
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1SEL                   000000F4 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F5 - 000000F5 (0x1 bytes), align: 0
+  Segment part 6. ROOT.       Intra module refs:   cc2530_gpio_select_gpio_function
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2SEL                   000000F5 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000FD - 000000FD (0x1 bytes), align: 0
+  Segment part 7. ROOT.       Intra module refs:   cc2530_gpio_set_input
+                                                   cc2530_gpio_set_output
+                                                   cc2530_uart0_init (cc2530_uart0)
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P0DIR                   000000FD 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000FE - 000000FE (0x1 bytes), align: 0
+  Segment part 8. ROOT.       Intra module refs:   cc2530_gpio_set_input
+                                                   cc2530_gpio_set_output
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P1DIR                   000000FE 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000FF - 000000FF (0x1 bytes), align: 0
+  Segment part 9. ROOT.       Intra module refs:   cc2530_gpio_set_input
+                                                   cc2530_gpio_set_output
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           P2DIR                   000000FF 
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 000000D2 - 000000E5 (0x14 bytes), align: 0
+  Segment part 15.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_gpio_set_output
+                                   000000D2        cc2530_led_write (cc2530_led)
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 000000E6 - 000000FC (0x17 bytes), align: 0
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_gpio_set_input   000000E6        cc2530_led_init_open_drain (cc2530_led)
+                                                   cc2530_led_write (cc2530_led)
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 000000FD - 00000113 (0x17 bytes), align: 0
+  Segment part 17.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_gpio_write_low   000000FD        cc2530_led_init_open_drain (cc2530_led)
+                                                   cc2530_led_write (cc2530_led)
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 00000114 - 0000012A (0x17 bytes), align: 0
+  Segment part 19.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_gpio_select_gpio_function
+                                   00000114        cc2530_led_init_open_drain (cc2530_led)
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_irq.r51
+  PROGRAM MODULE, NAME : cc2530_irq
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 000000A8 - 000000A8 (0x1 bytes), align: 0
+  Segment part 1. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IEN0                    000000A8 
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_l298n.r51
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_led.r51
+  PROGRAM MODULE, NAME : cc2530_led
+
+  SEGMENTS IN THE MODULE
+  ======================
+NEAR_CODE
+  Relative segment, address: CODE 0000012B - 0000015A (0x30 bytes), align: 0
+  Segment part 6.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_led_init_open_drain
+                                   0000012B        cc2530_board_init (cc2530_board)
+               calls direct
+               ISTACK = 00000000 ( 00000001 )
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 0000015B - 00000196 (0x3c bytes), align: 0
+  Segment part 7.             Intra module refs:   cc2530_led_toggle
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_led_write        0000015B 
+               calls direct
+               ISTACK = 00000002 ( 00000002 )
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 00000197 - 000001C3 (0x2d bytes), align: 0
+  Segment part 8.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_led_toggle       00000197        main (main)
+               calls direct
+               ISTACK = 00000000 ( 00000003 )
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_line4.r51
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_radio.r51
+  PROGRAM MODULE, NAME : cc2530_radio
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 000000BE - 000000BE (0x1 bytes), align: 0
+  Segment part 1. ROOT.       Intra module refs:   cc2530_radio_enable_rx
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SLEEPCMD                000000BE 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000D9 - 000000D9 (0x1 bytes), align: 0
+  Segment part 2. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RFD                     000000D9 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000E1 - 000000E1 (0x1 bytes), align: 0
+  Segment part 3. ROOT.       Intra module refs:   cc2530_radio_enable_rx
+                                                   cc2530_radio_flush_rx
+                                                   cc2530_radio_flush_tx
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RFST                    000000E1 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000E9 - 000000E9 (0x1 bytes), align: 0
+  Segment part 4. ROOT.       Intra module refs:   cc2530_radio_enable_rx
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RFIRQF0                 000000E9 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000BF - 000000BF (0x1 bytes), align: 0
+  Segment part 5. ROOT.       Intra module refs:   cc2530_radio_enable_rx
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RFERRF                  000000BF 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 00006180 - 00006180 (0x1 bytes), align: 0
+  Segment part 6. ROOT.       Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FRMFILT0                00006180 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 00006181 - 00006181 (0x1 bytes), align: 0
+  Segment part 7. ROOT.       Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FRMFILT1                00006181 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 00006182 - 00006182 (0x1 bytes), align: 0
+  Segment part 8. ROOT.       Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           SRCMATCH                00006182 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 00006189 - 00006189 (0x1 bytes), align: 0
+  Segment part 9. ROOT.       Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FRMCTRL0                00006189 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 0000618A - 0000618A (0x1 bytes), align: 0
+  Segment part 10. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FRMCTRL1                0000618A 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 0000618B - 0000618B (0x1 bytes), align: 0
+  Segment part 11. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RXENABLE                0000618B 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 0000618F - 0000618F (0x1 bytes), align: 0
+  Segment part 12. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FREQCTRL                0000618F 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 00006190 - 00006190 (0x1 bytes), align: 0
+  Segment part 13. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TXPOWER                 00006190 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 00006191 - 00006191 (0x1 bytes), align: 0
+  Segment part 14. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TXCTRL                  00006191 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 00006194 - 00006194 (0x1 bytes), align: 0
+  Segment part 15. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FIFOPCTRL               00006194 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 00006195 - 00006195 (0x1 bytes), align: 0
+  Segment part 16. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FSMCTRL                 00006195 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 00006196 - 00006196 (0x1 bytes), align: 0
+  Segment part 17. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CCACTRL0                00006196 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 00006197 - 00006197 (0x1 bytes), align: 0
+  Segment part 18. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CCACTRL1                00006197 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 0000619B - 0000619B (0x1 bytes), align: 0
+  Segment part 19. ROOT.      Intra module refs:   cc2530_radio_enable_rx
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RXFIFOCNT               0000619B 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 0000619C - 0000619C (0x1 bytes), align: 0
+  Segment part 20. ROOT.      Intra module refs:   cc2530_radio_enable_rx
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TXFIFOCNT               0000619C 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061A8 - 000061A8 (0x1 bytes), align: 0
+  Segment part 21. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MDMCTRL0                000061A8 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061A9 - 000061A9 (0x1 bytes), align: 0
+  Segment part 22. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           MDMCTRL1                000061A9 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061AB - 000061AB (0x1 bytes), align: 0
+  Segment part 23. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           RXCTRL                  000061AB 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061AC - 000061AC (0x1 bytes), align: 0
+  Segment part 24. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FSCTRL                  000061AC 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061AD - 000061AD (0x1 bytes), align: 0
+  Segment part 25. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FSCAL0                  000061AD 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061AE - 000061AE (0x1 bytes), align: 0
+  Segment part 26. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FSCAL1                  000061AE 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061AF - 000061AF (0x1 bytes), align: 0
+  Segment part 27. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FSCAL2                  000061AF 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061B0 - 000061B0 (0x1 bytes), align: 0
+  Segment part 28. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           FSCAL3                  000061B0 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061B1 - 000061B1 (0x1 bytes), align: 0
+  Segment part 29. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           AGCCTRL0                000061B1 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061B2 - 000061B2 (0x1 bytes), align: 0
+  Segment part 30. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           AGCCTRL1                000061B2 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061B3 - 000061B3 (0x1 bytes), align: 0
+  Segment part 31. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           AGCCTRL2                000061B3 
+    -------------------------------------------------------------------------
+XDATA_AN
+  Relative segment, address: XDATA 000061B4 - 000061B4 (0x1 bytes), align: 0
+  Segment part 32. ROOT.      Intra module refs:   cc2530_radio_apply_default_config
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           AGCCTRL3                000061B4 
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 000001C4 - 0000025C (0x99 bytes), align: 0
+  Segment part 38.            Intra module refs:   cc2530_radio_enable_rx
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_radio_apply_default_config
+                                   000001C4 
+               ISTACK = 00000001 ( 00000000 )
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 0000025D - 00000263 (0x7 bytes), align: 0
+  Segment part 39.            Intra module refs:   cc2530_radio_enable_rx
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_radio_flush_rx   0000025D 
+               ISTACK = 00000001 ( 00000000 )
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 00000264 - 0000026A (0x7 bytes), align: 0
+  Segment part 40.            Intra module refs:   cc2530_radio_enable_rx
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_radio_flush_tx   00000264 
+               ISTACK = 00000002 ( 00000000 )
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 0000026B - 0000029C (0x32 bytes), align: 0
+  Segment part 41.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_radio_enable_rx
+                                   0000026B        main (main)
+               calls direct
+               ISTACK = 00000000 ( 00000001 )
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_system.r51
+  PROGRAM MODULE, NAME : cc2530_system
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 0000009E - 0000009E (0x1 bytes), align: 0
+  Segment part 1. ROOT.       Intra module refs:   cc2530_system_clock_use_32mhz_xosc
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CLKCONSTA               0000009E 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000C6 - 000000C6 (0x1 bytes), align: 0
+  Segment part 2. ROOT.       Intra module refs:   cc2530_system_clock_use_32mhz_xosc
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           CLKCONCMD               000000C6 
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 0000029D - 000002A6 (0xa bytes), align: 0
+  Segment part 11.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_system_clock_use_32mhz_xosc
+                                   0000029D        cc2530_radio_enable_rx (cc2530_radio)
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_timer1.r51
+  PROGRAM MODULE, NAME : cc2530_timer1
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 000000AF - 000000AF (0x1 bytes), align: 0
+  Segment part 1. ROOT.       Intra module refs:   cc2530_timer1_start_free_running
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           T1STAT                  000000AF 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000E2 - 000000E2 (0x1 bytes), align: 0
+  Segment part 2. ROOT.       Intra module refs:   cc2530_timer1_get_count
+                                                   cc2530_timer1_start_free_running
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           T1CNTL                  000000E2 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000E3 - 000000E3 (0x1 bytes), align: 0
+  Segment part 3. ROOT.       Intra module refs:   cc2530_timer1_get_count
+                                                   cc2530_timer1_start_free_running
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           T1CNTH                  000000E3 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000E4 - 000000E4 (0x1 bytes), align: 0
+  Segment part 4. ROOT.       Intra module refs:   cc2530_timer1_start_free_running
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           T1CTL                   000000E4 
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 000002A7 - 000002B6 (0x10 bytes), align: 0
+  Segment part 10.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_timer1_start_free_running
+                                   000002A7        main (main)
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 000002B7 - 000002D6 (0x20 bytes), align: 0
+  Segment part 11.            Intra module refs:   cc2530_timer1_delay_ticks
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_timer1_get_count
+                                   000002B7 
+               ISTACK = 00000007 ( 00000002 )
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 000002D7 - 00000308 (0x32 bytes), align: 0
+  Segment part 12.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_timer1_delay_ticks
+                                   000002D7        main (main)
+               calls direct
+               ISTACK = 00000000 ( 00000007 )
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\cc2530_uart0.r51
+  PROGRAM MODULE, NAME : cc2530_uart0
+
+  SEGMENTS IN THE MODULE
+  ======================
+SFR_AN
+  Relative segment, address: DATA 00000088 - 00000088 (0x1 bytes), align: 0
+  Segment part 1. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           TCON                    00000088 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 00000086 - 00000086 (0x1 bytes), align: 0
+  Segment part 2. ROOT.       Intra module refs:   cc2530_uart0_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0CSR                   00000086 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000C1 - 000000C1 (0x1 bytes), align: 0
+  Segment part 3. ROOT.       Intra module refs:   cc2530_uart0_write_byte
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0DBUF                  000000C1 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000C2 - 000000C2 (0x1 bytes), align: 0
+  Segment part 4. ROOT.       Intra module refs:   cc2530_uart0_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0BAUD                  000000C2 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000C4 - 000000C4 (0x1 bytes), align: 0
+  Segment part 5. ROOT.       Intra module refs:   cc2530_uart0_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0UCR                   000000C4 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000C5 - 000000C5 (0x1 bytes), align: 0
+  Segment part 6. ROOT.       Intra module refs:   cc2530_uart0_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           U0GCR                   000000C5 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000E8 - 000000E8 (0x1 bytes), align: 0
+  Segment part 7. ROOT.       Intra module refs:   cc2530_uart0_init
+                                                   cc2530_uart0_write_byte
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           IRCON2                  000000E8 
+    -------------------------------------------------------------------------
+SFR_AN
+  Relative segment, address: DATA 000000F1 - 000000F1 (0x1 bytes), align: 0
+  Segment part 9. ROOT.       Intra module refs:   cc2530_uart0_init
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           PERCFG                  000000F1 
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 00000309 - 0000032F (0x27 bytes), align: 0
+  Segment part 16.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_uart0_init       00000309        main (main)
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 00000330 - 00000338 (0x9 bytes), align: 0
+  Segment part 17.            Intra module refs:   cc2530_uart0_write_string
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_uart0_write_byte
+                                   00000330 
+               ISTACK = 00000001 ( 00000000 )
+    -------------------------------------------------------------------------
+NEAR_CODE
+  Relative segment, address: CODE 00000339 - 00000353 (0x1b bytes), align: 0
+  Segment part 18.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           cc2530_uart0_write_string
+                                   00000339        main (main)
+               calls direct
+               ISTACK = 00000000 ( 00000001 )
+
+    *************************************************************************
+
+  FILE NAME : C:\Users\Administrator\Documents\Codex\2026-06-01\vscode-cc2530\build\obj\main.r51
+  PROGRAM MODULE, NAME : main
+
+  SEGMENTS IN THE MODULE
+  ======================
+NEAR_CODE
+  Relative segment, address: CODE 00000354 - 000003AA (0x57 bytes), align: 0
+  Segment part 12. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           main                    00000354        ?call_main (?cmain)
+               calls direct
+               ISTACK = 00000000 ( 00000001 )
+    -------------------------------------------------------------------------
+IDATA_I
+  Relative segment, address: IDATA 00000043 - 00000059 (0x17 bytes), align: 0
+  Segment part 6.             Intra module refs:   main
+    -------------------------------------------------------------------------
+IDATA_I
+  Relative segment, address: IDATA 0000005A - 0000005B (0x2 bytes), align: 0
+  Segment part 8.             Intra module refs:   main
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           main::radio             0000005A 
+    -------------------------------------------------------------------------
+IDATA_I
+  Relative segment, address: IDATA 0000005C - 0000005D (0x2 bytes), align: 0
+  Segment part 10.            Intra module refs:   main
+           LOCAL                   ADDRESS         
+           =====                   =======         
+           main::uart0             0000005C 
+    -------------------------------------------------------------------------
+IDATA_ID
+  Relative segment, address: CODE 00000038 - 0000004E (0x17 bytes), align: 0
+  Segment part 7.             Intra module refs:   Segment part 6
+    -------------------------------------------------------------------------
+IDATA_ID
+  Relative segment, address: CODE 0000004F - 00000050 (0x2 bytes), align: 0
+  Segment part 9.             Intra module refs:   main::radio
+    -------------------------------------------------------------------------
+IDATA_ID
+  Relative segment, address: CODE 00000051 - 00000052 (0x2 bytes), align: 0
+  Segment part 11.            Intra module refs:   main::uart0
+
+    *************************************************************************
+
+  FILE NAME : C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.0 Evaluation\8051\lib\clib\cl-pli-nsid-1e16x01.r51
+  LIBRARY MODULE, NAME : ?cexit
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTART
+  Relative segment, address: CODE 00000003 - 00000007 (0x5 bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           exit                    00000003        ?call_main (?cmain)
+           ?C_EXIT                 00000003 
+           ?ROM_MONITOR_NOPS       00000003 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?cmain
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTART
+  Relative segment, address: CODE 00000008, align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?cmain                  00000008        Segment part 13 (CSTARTUP)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 00000008 - 00000010 (0x9 bytes), align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __low_level_init_call   00000008        __low_level_init (?low_level_init)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 00000011 - 00000023 (0x13 bytes), align: 0
+  Segment part 22.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __INIT_IDATA_I          00000011        Segment part 6 (main)
+                                                   cc2530_board_status_led (cc2530_board)
+                                                   main::radio (main)
+                                                   main::uart0 (main)
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 00000024, align: 0
+  Segment part 32.            Intra module refs:   __low_level_init_call
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 00000024 - 00000029 (0x6 bytes), align: 0
+  Segment part 33.            Intra module refs:   ?cmain
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?call_main              00000024 
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : CSTARTUP
+
+  SEGMENTS IN THE MODULE
+  ======================
+REGISTERS
+  Relative segment, address: DATA 00000000, align: 0
+  Segment part 0.             Intra module refs:   Segment part 6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?REGISTERS              00000000 
+    -------------------------------------------------------------------------
+ISTACK
+  Relative segment, address: IDATA 00000070, align: 0
+  Segment part 1.             Intra module refs:   Segment part 6
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?ISTACK_START           00000070 
+    -------------------------------------------------------------------------
+INTVEC
+  Common segment, address: CODE 00000000 - 00000002 (0x3 bytes), align: 0
+  Segment part 5. ROOT.       Intra module refs:   Segment part 6
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 0000002A - 0000002F (0x6 bytes), align: 0
+  Segment part 6. ROOT.       Intra module refs:   Segment part 5
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __program_start         0000002A 
+           ?RESET_SP               0000002D 
+    -------------------------------------------------------------------------
+CSTART
+  Relative segment, address: CODE 00000030 - 00000032 (0x3 bytes), align: 0
+  Segment part 13.            Intra module refs:   Absolute parts
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : VIRTUAL_REGISTERS
+
+  SEGMENTS IN THE MODULE
+  ======================
+BREG
+  Relative segment, address: BIT 00000020.0 - 00000020.7 (0x8 bits), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?B0                     00000020.0      Absolute parts (CSTARTUP)
+    -------------------------------------------------------------------------
+VREG
+  Relative segment, address: DATA 00000021, align: 0
+  Segment part 1.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?V0                     00000021        ?FUNC_ENTER_SP (?FUNC_ENTER_SP)
+                                                   ?FUNC_LEAVE_SP (?FUNC_LEAVE_SP)
+                                                   cc2530_adc_read_once (cc2530_adc)
+                                                   cc2530_random16 (cc2530_adc)
+                                                   cc2530_timer1_delay_ticks (cc2530_timer1)
+                                                   cc2530_timer1_get_count (cc2530_timer1)
+                                                   main (main)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FUNC_ENTER_SP
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 00000053 - 00000068 (0x16 bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FUNC_ENTER_SP          00000053        cc2530_timer1_delay_ticks (cc2530_timer1)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?FUNC_LEAVE_SP
+
+  SEGMENTS IN THE MODULE
+  ======================
+RCODE
+  Relative segment, address: CODE 00000069 - 0000007F (0x17 bytes), align: 0
+  Segment part 0.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           ?FUNC_LEAVE_SP          00000069        cc2530_timer1_delay_ticks (cc2530_timer1)
+
+    -------------------------------------------------------------------------
+  LIBRARY MODULE, NAME : ?low_level_init
+
+  SEGMENTS IN THE MODULE
+  ======================
+CSTART
+  Relative segment, address: CODE 00000033 - 00000035 (0x3 bytes), align: 0
+  Segment part 6. ROOT.
+           ENTRY                   ADDRESS         REF BY
+           =====                   =======         ======
+           __low_level_init        00000033        __low_level_init_call (?cmain)
+
+
+
+
+                ****************************************
+                *                                      *
+                *      SEGMENTS IN ADDRESS ORDER       *
+                *                                      *
+                ****************************************
+
+
+SEGMENT              SPACE    START ADDRESS   END ADDRESS     SIZE  TYPE  ALIGN
+=======              =====    =============   ===========     ====  ====  =====
+INTVEC               CODE          00000000 - 00000002           3   com    0
+CSTART               CODE          00000003 - 00000035          33   rel    0
+DATA_ID              CODE               00000036                     dse    0
+BIT_ID               CODE               00000036                     dse    0
+BDATA_ID             CODE               00000036                     dse    0
+IDATA_ID             CODE          00000036 - 00000052          1D   rel    0
+RCODE                CODE          00000053 - 0000007F          2D   rel    0
+CODE_N               CODE               00000080                     dse    0
+DIFUNCT              CODE               00000080                     dse    0
+CODE_C               CODE               00000080                     dse    0
+NEAR_CODE            CODE          00000080 - 000003AA         32B   rel    0
+REGISTERS            DATA          00000000 - 00000007           8   rel    0
+BREG                 BIT        00000020.0  -  00000020.7        8   rel    0
+VREG                 DATA          00000021 - 00000040          20   rel    0
+SFR_AN               DATA          00000080 - 00000080           1   rel    0
+                     DATA          00000086 - 00000086           1 
+                     DATA          00000088 - 00000088           1 
+                     DATA          00000090 - 00000090           1 
+                     DATA          0000009E - 0000009E           1 
+                     DATA          000000A0 - 000000A0           1 
+                     DATA          000000A8 - 000000A8           1 
+                     DATA          000000AF - 000000AF           1 
+                     DATA          000000B4 - 000000B4           1 
+                     DATA          000000B6 - 000000B6           1 
+                     DATA          000000BA - 000000BF           6 
+                     DATA          000000C1 - 000000C2           2 
+                     DATA          000000C4 - 000000C6           3 
+                     DATA          000000D9 - 000000D9           1 
+                     DATA          000000E1 - 000000E4           4 
+                     DATA          000000E8 - 000000E9           2 
+                     DATA          000000F1 - 000000F1           1 
+                     DATA          000000F3 - 000000F5           3 
+                     DATA          000000FD - 000000FF           3 
+XDATA_AN             XDATA         00006180 - 00006182           3   rel    0
+                     XDATA         00006189 - 0000618B           3 
+                     XDATA         0000618F - 00006191           3 
+                     XDATA         00006194 - 00006197           4 
+                     XDATA         0000619B - 0000619C           2 
+                     XDATA         000061A8 - 000061A9           2 
+                     XDATA         000061AB - 000061B4           A 
+IDATA_I              IDATA         00000041 - 0000005D          1D   rel    0
+ISTACK               IDATA         00000070 - 000000FF          90   rel    0
+
+                ****************************************
+                *                                      *
+                *        END OF CROSS REFERENCE        *
+                *                                      *
+                ****************************************
+
+ 939 bytes of CODE  memory
+  40 bytes of DATA  memory (+ 35 absolute )
+   0 bytes of XDATA memory (+ 27 absolute )
+ 173 bytes of IDATA memory
+   8 bits  of BIT   memory
+
+Errors: none
+Warnings: none
+
